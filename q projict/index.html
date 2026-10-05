@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Pet Sanctuary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🐾 Magical Pet Sanctuary</h1>
+  <p class="subtitle">Take care of the magical creatures</p>
+
+  <div class="controls">
+    <button class="btn" id="showFormBtn">✨ Adopt New Pet</button>
+  </div>
+
+  <div class="form-container" id="adoptForm">
+    <h2>Adopt a New Pet</h2>
+    <form id="petForm">
+      <label>Pet Name</label>
+      <input type="text" id="name" required>
+
+      <label>Pet Type</label>
+      <select id="type" required>
+        <option value="Dragon">Dragon 🐉</option>
+        <option value="Unicorn">Unicorn 🦄</option>
+        <option value="Phoenix">Phoenix 🔥</option>
+        <option value="Fairy">Fairy 🧚</option>
+        <option value="Griffin">Griffin 🦅</option>
+      </select>
+
+      <label>Color</label>
+      <input type="text" id="color" required>
+
+      <label>Description</label>
+      <textarea id="description" rows="3" required></textarea>
+
+      <button type="submit" class="btn">Adopt Pet 💖</button>
+    </form>
+  </div>
+
+  <div id="pets-grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
